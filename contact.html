@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Day Bootstrap-Template</title>
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #e6e6f5;">
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Thapar University</div>
+                    <div class="text-two">Patiala</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+919646802062</div>
+                    <div class="text-two">+917814340410</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">Akhilgoyal2002@gmail.com</div>
+                    <div class="text-two">Aarushi.19handa@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any types of queries, you can send me
+                    message from here. It's my pleasure to help you.</p>
+
+                <form action="backend.php">
+                    <div class="input-box">
+                        <input type="text" name="yourname" id="yourname"  placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="mail" id="youremail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box message-box" required>
+                        <textarea id="message" name="text" placeholder="Message" rows="5" style="height: 125px; width:100%"
+                            required></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="send-button" id="button" value="Send Now" required>
+                    </div>
+                </form>
+     
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

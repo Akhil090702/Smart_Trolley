@@ -1,0 +1,22 @@
+{
+  "name": "cap_website",
+  "version": "1.0.0",
+  "description": "Smart Assisting Trolley",
+  "main": "cap.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Akhil Goyal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

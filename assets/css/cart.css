@@ -1,0 +1,68 @@
+@media screen and (max-width: 1000px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.product_image img {
+    min-height: 200px;
+    max-width: 200px;
+}
+
+.h5-title {
+    font-weight: bold;
+}
+
+.calories {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.price-item {
+    font-weight: bold;
+}
+
+.set-quantity {
+    position: relative;
+}
+
+.page-link {
+    /* line-height: 16px; */
+    width: 45px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+}

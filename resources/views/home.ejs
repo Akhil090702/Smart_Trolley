@@ -1,4 +1,8 @@
+<!-- body - #2d2f46
+#222435
+-->
 
+<section class="home">
     <section class="header-image">
         <div class="text_image">
             <div class="container">
@@ -65,6 +69,15 @@
         </div>
     </section>
 
+    <section class="food_fix" style="margin-top: 50px;">
+        <div class="container">
+            <div class="food_text">
+                <h1>FOOD IS LOVE</h1>
+            </div>
+        </div>
+    </section>
+
+
     <section class="menu" id="Menu">
         <div class="menu">
             <div class="container">
@@ -72,36 +85,6 @@
                     <h2>MENU</h2>
                     <h6 style="text-align: center;">Eat, drink and <span style="color: red;">live free </span></h6>
                     <hr>
-                    <!-- <div class="row" style="height: 70px;">
-                        <div class="container">
-                            <div class="col-lg-12">
-                                <div id="myBtnContainer">
-                                    <ul class="Menu-list">
-                                        <li>
-                                            <a href="" class="clickbtn active" onclick="filterSelection('ALL')">SHOW
-                                                ALL</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="clickbtn"
-                                                onclick="filterSelection('SANDWICH')">SANDWICH</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="clickbtn" onclick="filterSelection('DRINK')">DRINK</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="clickbtn" onclick="filterSelection('BURGER')">BURGER</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="clickbtn" onclick="filterSelection('DESSERT')">DESSERT</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="clickbtn" onclick="filterSelection('PATTIES')">PATTIES</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -112,42 +95,80 @@
             <div class="container">
                 <div id="myBtnContainer">
                     <div class="row" style="text-align: -webkit-center;">
-                        <div class="col-lg-4 col-md-6 col-12" id="BOX1">
-                            <div class="coloumn sandwich" data-item="sandwich">
-                                <div class="polaroid" tabIndex="0">
-                                    <img class="img-thumbnail" src="images/21.jpg" />
-                                    <div class="dish">
-
-                                        <div class="dish-title">
-                                            <h5 class="h3-title">PANEER SANDWICH</h5>
-                                            <p>110 calories</p>
-                                        </div>
-
-                                        <div class="dish-bottom-row">
-                                            <ul class="add-cart">
-                                                <li>
-                                                    <b>Rs. 29</b>
-                                                </li>
-                                                <li>
-                                                    <div class="col-lg-12">
-                                                        <button class="dish-add-btn">
-                                                            <i class="bi bi-plus"></i>
-                                                        </button>
-                                                        <button class="dish-add-btn">
-                                                            <i class="bi bi-cart-fill"></i>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                        <% Items.forEach(function(Item) { %>
+                            <div class="col-lg-4 col-md-6 col-12" id="BOX1">
+                                <div class="coloumn sandwich" data-item="sandwich">
+                                    <div class="polaroid" tabIndex="0">
+                                        <img class="img-thumbnail" src="images/<%= Item.image %>" />
+                                        <div class="dish">
+                                            <div class="dish-title">
+                                                <h5 class="h3-title">
+                                                    <%= Item.name %>
+                                                </h5>
+                                                <p>110 calories</p>
+                                            </div>
+                                            <div class="dish-bottom-row">
+                                                <ul class="add-cart">
+                                                    <li>
+                                                        <b>Rs. <%= Item.price %></b>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-lg-12">
+                                                            <button data-item='<%= JSON.stringify(Item) %>'
+                                                                class="dish-add-btn">
+                                                                <i class="bi bi-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <% }) %>
+                    </div>
+                    <!-- <div class="row" style="text-align: -webkit-center;">
+
+                        <% Items.forEach(function(Items) { %>
+
+                            <div class="col-lg-4 col-md-6 col-12" id="BOX1">
+                                <div class="coloumn sandwich" data-item="sandwich">
+                                    <div class="polaroid" tabIndex="0">
+                                        <img class="img-thumbnail" src="images/<%= Items.image%>" />
+                                        <div class="dish">
+    
+                                            <div class="dish-title">
+                                                <h5 class="h3-title"><%= Items.name %></h5>
+                                                <p>110 calories</p>
+                                            </div>
+    
+                                            <div class="dish-bottom-row">
+                                                <ul class="add-cart">
+                                                    <li>
+                                                        <b>Rs. <%= Items.price %></b>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-lg-12">
+                                                            <button data-Items='{"name": "Item1", "price": 10}' class="dish-add-btn">
+                                                                <i class="bi bi-plus"></i>
+                                                            </button>
+                                                            <button class="dish-add-btn2">
+                                                                <i class="bi bi-cart-fill"></i>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <%}) %> -->
 
 
 
-                        <div class="col-lg-4 col-md-6 col-12" id="BOX2">
+                    <!-- <div class="col-lg-4 col-md-6 col-12" id="BOX2">
                             <div class="polaroid" tabIndex="0">
                                 <div class="coloumn drink" data-item="drink">
                                     <img class="img-thumbnail" src="images/23.webp" />
@@ -306,24 +327,18 @@
                                 </div>
                             </div>
                         </div>
+ -->
 
-
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section class="food_fix">
-        <div class="container">
-            <div class="food_text">
-                <h1>FOOD IS LOVE</h1>
-            </div>
         </div>
     </section>
 
-    <section class="collage_img">
+
+
+
+    <!-- <section class="collage_img">
         <div class="collage">
             <div class="container">
                 <div class="row" style="text-align: -webkit-center;">
@@ -524,4 +539,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+</section>

@@ -1,0 +1,74 @@
+  [
+    {
+      "id": 1,
+      "name": "PANEER SANDWICH",
+      "price": "29",
+      "image":"21.jpg"
+    },
+    {
+      "id": 2,
+      "name": "COFFEE",
+      "price": "20",
+      "image":"23.webp"
+    },
+    {
+      "id": 3,
+      "name": "BURGER",
+      "price": "30",
+      "image":"27.jpg"
+    },
+    {
+      "id": 4,
+      "name": "COCACOLA",
+      "price": "20",
+      "image":"4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "BROWNIE",
+      "price": "20",
+      "image":"25.webp"
+    },
+    {
+      "id": 6,
+      "name": "PASTRY",
+      "price": "40",
+      "image":"6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "CORN SANDWICH",
+      "price": "19",
+      "image":"22.jpg"
+    },
+    {
+      "id": 8,
+      "name": "TEA",
+      "price": "10",
+      "image":"26.webp"
+    },
+    {
+      "id": 9,
+      "name": "CHEESE BURGER",
+      "price": "49",
+      "image":"27.webp"
+    },
+    {
+      "id": 10,
+      "name": "SPRITE",
+      "price": "20",
+      "image":"sprite.jpg"
+    },
+    {
+      "id": 11,
+      "name": "CHOCOLATE",
+      "price": "50",
+      "image":"choco.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "ALOO PATTIES",
+      "price": "15",
+      "image":"aloo.jpeg"
+    }
+  ]

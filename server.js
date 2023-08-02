@@ -5,15 +5,18 @@ const ejs = require('ejs');
 const path = require("path");
 const expressLayout = require('express-ejs-layouts');
 const mongoose = require("mongoose");
-const port = process.env.port || 3000;
+// const port = process.env.port || 3000;
+const port = process.env.PORT;
+const url = process.env.DATABASE_URL;
 const session = require('express-session');
 const flash = require("express-flash");
+require('dotenv').config();
 // const MongoDBstore = require('connect-mongo')(session);
 
 
 // Database connection
 // const url = 'mongodb://0.0.0.0/Smart_trolley';
-const url = 'mongodb+srv://Akhil-Food:JGWvYRgkVOQcJov5@food-order.xj1elrp.mongodb.net/?retryWrites=true&w=majority';
+// const url = 'mongodb+srv://Akhil-Food:JGWvYRgkVOQcJov5@food-order.xj1elrp.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(url);
 const connection = mongoose.connection;
 connection.once('open', () => {

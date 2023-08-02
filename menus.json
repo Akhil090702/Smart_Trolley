@@ -63,12 +63,12 @@
       "id": 11,
       "name": "CHOCOLATE",
       "price": "50",
-      "image":"choco.jpeg"
+      "image":"choco.jpg"
     },
     {
       "id": 12,
       "name": "ALOO PATTIES",
       "price": "15",
-      "image":"aloo.jpeg"
+      "image":"aloo.jpg"
     }
   ]

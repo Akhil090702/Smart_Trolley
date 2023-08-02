@@ -321,7 +321,7 @@ html {
   display: grid;
   position: relative;
   background-color: #000000;
-  background-image: url(/images/new\ image.jpg);
+  background-image: url(/images/new-image.jpg);
   background-size: cover;
   filter: brightness(50%);
 }

@@ -12,7 +12,8 @@ const flash = require("express-flash");
 
 
 // Database connection
-const url = 'mongodb://0.0.0.0/Smart_trolley';
+// const url = 'mongodb://0.0.0.0/Smart_trolley';
+const url = 'mongodb+srv://Akhil-Food:JGWvYRgkVOQcJov5@food-order.xj1elrp.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(url);
 const connection = mongoose.connection;
 connection.once('open', () => {

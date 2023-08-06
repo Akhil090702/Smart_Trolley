@@ -18,6 +18,7 @@ function initRoutes(app) {
     // customer routes
     app.post('/OrderDone', Ordercontroller().store)
     app.get('/customers/OrderDone', Ordercontroller().live)
+    // app.get('/customers/OrderDone', Ordercontroller().live)
 }
 
 module.exports = initRoutes

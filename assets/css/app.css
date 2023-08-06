@@ -425,8 +425,8 @@ html {
   color: black;
 }
 
-.collage_img {
-  margin-top: 40px;
+.collage {
+  background: black;
 }
 
 div.polaroid {
@@ -434,7 +434,6 @@ div.polaroid {
   /* border-radius: 25px; */
   background-color: rgb(0, 0, 0);
   color: white;
-  box-shadow: 8px 6px 10px rgba(124, 122, 122, 0.66);
   margin-bottom: 60px;
 }
 
